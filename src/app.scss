@@ -1,0 +1,30 @@
+@import './styles/header.scss';
+@import './styles/cardDiv.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin-inline: auto;
+}
+
+.game-over {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    gap: 16px;
+    button {
+        padding: 0.25em 1.5em;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+}

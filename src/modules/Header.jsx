@@ -6,8 +6,9 @@ const Header = ({score, best}) => {
         <header>
             <h1>Dog Memory</h1>
             <div className="score-div">
-                <p>Score: {score}</p>
-                <p>Best: {best}</p>
+                <h3>Current Score: {score}</h3>
+                |
+                <h3>Best Score: {best}</h3>
             </div>
         </header>
     )

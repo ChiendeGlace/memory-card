@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { useState, useEffect } from 'react';
 import Header from './modules/Header';
 import CardDiv from './modules/CardDiv';
+import './app.scss';
 
 const App = () => {
     const [selected, setSelected] = useState([]);
@@ -16,11 +17,11 @@ const App = () => {
     }, [score, best]);
     if (gameOver) {
         return (
-          <div className="game-over">
-            <h2>Game Over!</h2>
-            <button onClick={() => setGameOver(false)}>Play again</button>
-          </div>
-        )
+            <div className="game-over">
+                <h1>Game Over!</h1>
+                <button onClick={() => setGameOver(false)}>Play again</button>
+            </div>
+        );
     } else {
         return (
             <div className="container">

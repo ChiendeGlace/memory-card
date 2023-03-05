@@ -19,14 +19,14 @@ function shuffle(array) {
 }
 
 let cardsArray = [
-    { name: 'Angry', source: './../public/cat.jpg' },
-    { name: 'Sleepy', source: './../public/beagle.jpg' },
-    { name: 'Photogenic', source: './../public/corgi.jpg' },
-    { name: 'Snowman', source: './../public/snowman.jpg' },
-    { name: 'Romantic', source: './../public/romantic.jpg' },
-    { name: 'Puppy', source: './../public/puppy.jpg' },
-    { name: 'Thoughtful', source: './../public/husky.jpg' },
-    { name: 'Hawaii', source: './../public/vacation.jpg' },
+    { name: 'Angry', source: '/public/cat.jpg' },
+    { name: 'Sleepy', source: '/public/beagle.jpg' },
+    { name: 'Photogenic', source: '/public/corgi.jpg' },
+    { name: 'Snowman', source: '/public/snowman.jpg' },
+    { name: 'Romantic', source: '/public/romantic.jpg' },
+    { name: 'Puppy', source: '/public/puppy.jpg' },
+    { name: 'Thoughtful', source: '/public/husky.jpg' },
+    { name: 'Hawaii', source: '/public/vacation.jpg' },
 ];
 
 const CardDiv = ({ selected, setSelected, setScore, setGameOver }) => {

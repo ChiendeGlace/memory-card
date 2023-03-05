@@ -12,7 +12,7 @@ const Card = ({ name, source, selected, setSelected, setScore, setGameOver }) =>
         }
     };
     return (
-        <div className="card-div" id={name} onClick={handleClick}>
+        <div className="card" id={name} onClick={handleClick}>
             <img src={source} alt={name} width={200} height={200} />
             <h3>{name}</h3>
         </div>
