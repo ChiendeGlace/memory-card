@@ -20,7 +20,10 @@ function shuffle(array) {
 
 let cardsArray = [
     { name: 'Angry', source: '/public/cat.jpg' },
-    { name: 'Sleepy', source: '/public/beagle.jpg' },
+    {
+        name: 'Sleepy',
+        source: '/public/beagle.jpg',
+    },
     { name: 'Photogenic', source: '/public/corgi.jpg' },
     { name: 'Snowman', source: '/public/snowman.jpg' },
     { name: 'Romantic', source: '/public/romantic.jpg' },
