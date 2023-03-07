@@ -4,6 +4,7 @@ import sass from 'sass';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    mode: 'production',
     plugins: [react()],
     css: {
         preprocessorOptions: {
@@ -11,5 +12,8 @@ export default defineConfig({
                 implementation: sass,
             },
         },
+    },
+    build: {
+        base: process.env.NODE_ENV === 'production' ? '/memory-card/' : '/',
     },
 });
