@@ -1,5 +1,13 @@
 import React from 'react';
 import Card from './Card';
+import beagle from './beagle.jpg';
+import corgi from './corgi.jpg';
+import cat from './cat.jpg';
+import husky from './husky.jpg';
+import puppy from './puppy.jpg';
+import romantic from './romantic.jpg';
+import snowman from './snowman.jpg';
+import vacation from './vacation.jpg';
 
 function shuffle(array) {
     let currentIndex = array.length,
@@ -19,17 +27,20 @@ function shuffle(array) {
 }
 
 let cardsArray = [
-    { name: 'Angry', source: '/public/cat.jpg' },
+    { name: 'Angry', source: cat },
     {
         name: 'Sleepy',
-        source: '/public/beagle.jpg',
+        source: beagle,
     },
-    { name: 'Photogenic', source: '/public/corgi.jpg' },
-    { name: 'Snowman', source: '/public/snowman.jpg' },
-    { name: 'Romantic', source: '/public/romantic.jpg' },
-    { name: 'Puppy', source: '/public/puppy.jpg' },
-    { name: 'Thoughtful', source: '/public/husky.jpg' },
-    { name: 'Hawaii', source: '/public/vacation.jpg' },
+    {
+        name: 'Photogenic',
+        source: corgi,
+    },
+    { name: 'Snowman', source: snowman },
+    { name: 'Romantic', source: romantic },
+    { name: 'Puppy', source: puppy },
+    { name: 'Thoughtful', source: husky },
+    { name: 'Hawaii', source: vacation },
 ];
 
 const CardDiv = ({ selected, setSelected, setScore, setGameOver }) => {
